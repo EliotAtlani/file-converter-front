@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-
+import logo from "../assets/logo.png";
 interface LogoProps {
   className?: string;
   size?: string;
@@ -8,7 +8,7 @@ interface LogoProps {
 const Logo = ({ className, size = "w-32 h-32" }: LogoProps) => {
   return (
     <img
-      src="src/assets/logo.png"
+      src={logo}
       alt="File Swap Logo"
       className={cn(className, size, "max-w-full")}
     />
