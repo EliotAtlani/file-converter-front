@@ -1,4 +1,3 @@
-import React from "react";
 import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 import Kbd from "../ui/kbd";
