@@ -132,7 +132,7 @@ function App() {
     <div className="w-full h-screen flex relative">
       <LoaderLayout open={open} />
       <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="grow flex flex-col items-center mt-8">
+      <div className="grow flex flex-col items-center justify-center transfrom -translate-y-10">
         <Logo size="w-56 h-56" />
         <DragNdrop
           onFilesSelected={handleFilesSelected}
