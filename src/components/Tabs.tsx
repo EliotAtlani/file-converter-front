@@ -38,7 +38,7 @@ const Tabs = ({ tabs, activeTab, setActiveTab }: TabProps) => {
   }, [activeTab]);
 
   return (
-    <div className="absolute top-4 left-4">
+    <div className="absolute md:top-4 md:left-4 z-50 w-full flex justify-center md:justify-normal py-4 md:py-0">
       <div className="flex rounded-md">
         {tabs.map((tab, index) => (
           <button

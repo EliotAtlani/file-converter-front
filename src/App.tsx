@@ -129,19 +129,17 @@ function App() {
 
   console.log("MAIN ACTIVE", activeTab);
   return (
-    <div className="w-full h-screen flex relative">
+    <div className="w-screen md:h-screen min-h-screen flex flex-col md:flex-row relative">
       <LoaderLayout open={open} />
       <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="grow flex flex-col items-center justify-center transfrom -translate-y-10">
+      <div className="md:grow flex flex-col items-center justify-center md:transfrom md:-translate-y-1 w-full pt-20 md:pt-0">
         <Logo size="w-56 h-56" />
         <DragNdrop
           onFilesSelected={handleFilesSelected}
-          width="500px"
-          height="300px"
           fileInputRef={fileInputRef}
         />
       </div>
-      <div className="bg-background/[0.4] backdrop-blur-sm flex flex-col h-screen w-[550px] border-l-[2px] border-primary/[0.4] p-6">
+      <div className="bg-background/[0.4] md:backdrop-blur-sm flex flex-col md:h-screen md:w-[550px] w-full md:border-l-[2px] border-primary/[0.4] md:p-6 p-4 mt-10 mb-20 md:mt-0 md:mb-0">
         <ListFilesHeader files={files} />
 
         <ListFilesUploaded files={files} setFiles={setFiles} />

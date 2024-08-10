@@ -5,15 +5,12 @@ import Kbd from "./ui/kbd";
 
 interface DragNdropProps {
   onFilesSelected: (selectedFiles: File[]) => void;
-  width?: string;
-  height?: string;
+
   fileInputRef: React.RefObject<HTMLInputElement>;
 }
 
 const DragNdrop: React.FC<DragNdropProps> = ({
   onFilesSelected,
-  width,
-  height,
   fileInputRef,
 }) => {
   const handleFiles = useCallback(
@@ -39,9 +36,8 @@ const DragNdrop: React.FC<DragNdropProps> = ({
   return (
     <div
       className={cn(
-        "bg-background border-[1px] border-primary rounded-md p-4 mt-8 border-dashed flex items-center justify-center flex-col gap-4 text-center"
+        "bg-background border-[1px] border-primary rounded-md p-4 mt-8 border-dashed flex items-center justify-center flex-col gap-4 text-center w-[300px] h-[200px] md:w-[500px] md:h-[300px]"
       )}
-      style={{ width, height }}
       onDrop={handleDrop}
       onDragOver={(event) => event.preventDefault()}
     >

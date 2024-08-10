@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <App />
       <Toaster />
       <ServerStatus />
-      <div className="fixed bottom-6 left-6">
+      <div className="fixed bottom-12 md:bottom-6 left-6">
         <ModeToggle />
       </div>
     </ThemeProvider>
