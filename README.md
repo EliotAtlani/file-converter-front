@@ -6,7 +6,7 @@
 
 FileSwap is a versatile file converter that allows you to easily convert, compress, and resize your files across various formats.
 
-The FileSwap app is built with [ViteJS]([https://github.com/nestjs/nest](https://vitejs.dev/) in ReactJS, using TypeScript, [TailwindCSS](https://tailwindcss.com/) and [shadcnUI](https://ui.shadcn.com/)
+The FileSwap app is built with [ViteJS](https://vitejs.dev/) in ReactJS, using TypeScript, [TailwindCSS](https://tailwindcss.com/) and [shadcnUI](https://ui.shadcn.com/)
 
 ## Installation
 
