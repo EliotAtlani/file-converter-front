@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+<p align="center">
+  <a href="https://fileswap.eliotatlani.fr/" target="blank"><img src="https://fileswap.eliotatlani.fr/assets/logo-B9jXNGHb.png" width="200" alt="FileSwap Logo" /></a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description - FileSwap Frontend
 
-Currently, two official plugins are available:
+FileSwap is a versatile file converter that allows you to easily convert, compress, and resize your files across various formats.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The FileSwap app is built with [ViteJS]([https://github.com/nestjs/nest](https://vitejs.dev/)) in ReactJS, using TypeScript, [TailwindCSS](https://tailwindcss.com/) and [shadcnUI](https://ui.shadcn.com/)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+$ npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Running the app
+
+```bash
+# development
+$ npm run dev
+```
+
